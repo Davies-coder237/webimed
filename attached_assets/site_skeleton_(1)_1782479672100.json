@@ -1,0 +1,789 @@
+[
+  {
+    "route_example": "/",
+    "langs": {
+      "en": "/",
+      "ru": "/",
+      "fr": "/",
+      "it": "/",
+      "tr": "/"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d0%b0%d1%8f",
+    "langs": {
+      "en": "/",
+      "ru": "/%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d0%b0%d1%8f",
+      "fr": "/",
+      "it": "/",
+      "tr": "/"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/1a-hair-type",
+    "langs": {
+      "en": "/1a-hair-type"
+    },
+    "type": "dynamic",
+    "template_group": "hair_type_en",
+    "template_lang": "en",
+    "variant_count": 2,
+    "note": "Groupe de 2 pages générées par le même gabarit (pattern: ^\\d[ab]-hair-type$). Une seule route dynamique [slug] doit gérer toutes les variantes."
+  },
+  {
+    "route_example": "/2000-grafts-hair-transplant",
+    "langs": {
+      "en": "/2000-grafts-hair-transplant",
+      "ru": "/peresadka-volos-2000-graftov"
+    },
+    "type": "dynamic",
+    "template_group": "celebrity_hair_transplant_en",
+    "template_lang": "en",
+    "variant_count": 34,
+    "note": "Groupe de 34 pages générées par le même gabarit (pattern: ^(?P<celeb>[\\w-]+)-hair-transplant$). Une seule route dynamique [slug] doit gérer toutes les variantes."
+  },
+  {
+    "route_example": "/accueil",
+    "langs": {
+      "en": "/",
+      "ru": "/",
+      "fr": "/accueil",
+      "it": "/",
+      "tr": "/"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/afro-hair-transplant-in-turkey",
+    "langs": {
+      "en": "/afro-hair-transplant-in-turkey"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/ana-sayfa",
+    "langs": {
+      "en": "/",
+      "ru": "/",
+      "fr": "/",
+      "it": "/",
+      "tr": "/ana-sayfa"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/andrei-beburishvili-peresadka-volos",
+    "langs": {
+      "ru": "/andrei-beburishvili-peresadka-volos"
+    },
+    "type": "dynamic",
+    "template_group": "celebrity_hair_transplant_ru",
+    "template_lang": "ru",
+    "variant_count": 13,
+    "note": "Groupe de 13 pages générées par le même gabarit (pattern: ^(?P<celeb>[\\w-]+)-peresadka-volos$). Une seule route dynamique [slug] doit gérer toutes les variantes."
+  },
+  {
+    "route_example": "/articoli",
+    "langs": {
+      "en": "/articles",
+      "ru": "/%d1%81%d1%82%d0%b0%d1%82%d1%8c%d0%b8",
+      "it": "/articoli"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/basarisiz-sac-ekimi",
+    "langs": {
+      "tr": "/basarisiz-sac-ekimi"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/beard-transplant-in-turkey",
+    "langs": {
+      "en": "/beard-transplant-in-turkey",
+      "ru": "/peresadka-borodi-v-turcii",
+      "tr": "/sakal-ekimi"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/blog",
+    "langs": {
+      "en": "/blog",
+      "ru": "/%d0%b1%d0%bb%d0%be%d0%b3",
+      "fr": "/blog-sur-la-greffe-de-cheveux",
+      "tr": "/blog"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/blog/afro-hair",
+    "langs": {
+      "en": "/blog/afro-hair"
+    },
+    "type": "dynamic",
+    "template_group": "blog_category_en",
+    "template_lang": "en",
+    "variant_count": 4,
+    "note": "Groupe de 4 pages générées par le même gabarit (pattern: ^blog/[\\w-]+$). Une seule route dynamique [slug] doit gérer toutes les variantes."
+  },
+  {
+    "route_example": "/chi-siamo",
+    "langs": {
+      "it": "/chi-siamo"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/chto-takoe-graft",
+    "langs": {
+      "ru": "/chto-takoe-graft"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/contact",
+    "langs": {
+      "en": "/contact",
+      "ru": "/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d1%8b",
+      "fr": "/contact",
+      "it": "/contatto",
+      "tr": "/iletisim"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/dhi-hair-transplant-in-turkey",
+    "langs": {
+      "en": "/dhi-hair-transplant-in-turkey",
+      "ru": "/peresadka-volos-metodom-dhi",
+      "it": "/trapianto-di-capelli-con-metodo-dhi"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/eminem-beard-transplant",
+    "langs": {
+      "en": "/eminem-beard-transplant"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/eyebrow-transplant-in-turkey",
+    "langs": {
+      "en": "/eyebrow-transplant-in-turkey",
+      "ru": "/peresadka-brovey-v-turcii",
+      "tr": "/kas-ekimi"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/faq",
+    "langs": {
+      "en": "/faq",
+      "ru": "/faq",
+      "fr": "/faq",
+      "it": "/faq",
+      "tr": "/sss"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/finasteride-dla-volos",
+    "langs": {
+      "ru": "/finasteride-dla-volos"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/forehead-reduction-turkey",
+    "langs": {
+      "en": "/forehead-reduction-turkey"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/fue-sapphire-hair-transplant-in-turkey",
+    "langs": {
+      "en": "/fue-sapphire-hair-transplant-in-turkey",
+      "ru": "/peresadka-volos-metodom-fue-sapphire",
+      "it": "/trapianto-di-capelli-con-fue-sapphire"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/hair-transplant",
+    "langs": {
+      "en": "/hair-transplant",
+      "ru": "/peresadka-volos",
+      "tr": "/sac-ekimi"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/hair-transplant-after-10-years",
+    "langs": {
+      "en": "/hair-transplant-after-10-years"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/hair-transplant-before-and-after",
+    "langs": {
+      "en": "/hair-transplant-before-and-after",
+      "ru": "/peresadka-volos-do-i-posle",
+      "fr": "/avant-et-apres",
+      "it": "/risultati",
+      "tr": "/sac-ekimi-sonuclari"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/hair-transplant-for-black-women",
+    "langs": {
+      "en": "/hair-transplant-for-black-women"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/hair-transplant-in-birmingham",
+    "langs": {
+      "en": "/hair-transplant-in-birmingham"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/hair-transplant-in-istanbul",
+    "langs": {
+      "en": "/hair-transplant-in-istanbul"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/hair-transplant-in-turkey-reviews",
+    "langs": {
+      "en": "/hair-transplant-in-turkey-reviews",
+      "ru": "/peresadka-volos-v-turcii-otzivi"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/hair-transplant-timeline-progress",
+    "langs": {
+      "en": "/hair-transplant-timeline-progress",
+      "ru": "/process-posle-peresadki-volos"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/hair-transplant-turkey-cost",
+    "langs": {
+      "en": "/hair-transplant-turkey-cost",
+      "ru": "/peresadka-volos-v-turcii-cena",
+      "tr": "/sac-ekimi-fiyatlari"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/home",
+    "langs": {
+      "en": "/",
+      "ru": "/",
+      "fr": "/",
+      "it": "/home",
+      "tr": "/"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/is-hair-transplant-in-turkey-safe",
+    "langs": {
+      "en": "/is-hair-transplant-in-turkey-safe"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/kak-spat-posle-peresadki-volos",
+    "langs": {
+      "ru": "/kak-spat-posle-peresadki-volos"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/kas-laminasyonu",
+    "langs": {
+      "tr": "/kas-laminasyonu"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/kok-hucre-sac-ekimi",
+    "langs": {
+      "tr": "/kok-hucre-sac-ekimi"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/laminirovaniye-brovey",
+    "langs": {
+      "ru": "/laminirovaniye-brovey"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/mezoterapiya-volos",
+    "langs": {
+      "ru": "/mezoterapiya-volos"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/murat-boz-sac-ekimi",
+    "langs": {
+      "tr": "/murat-boz-sac-ekimi"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/non-categorizzato",
+    "langs": {
+      "it": "/non-categorizzato"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/norma-vipadenie-volos",
+    "langs": {
+      "ru": "/norma-vipadenie-volos"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/oblisenie-u-mujchin",
+    "langs": {
+      "ru": "/oblisenie-u-mujchin"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/peresadka-volo-kazan",
+    "langs": {
+      "ru": "/peresadka-volo-kazan"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/peresadka-volos-3500-graftov",
+    "langs": {
+      "ru": "/peresadka-volos-3500-graftov"
+    },
+    "type": "dynamic",
+    "template_group": "grafts_count_ru",
+    "template_lang": "ru",
+    "variant_count": 7,
+    "note": "Groupe de 7 pages générées par le même gabarit (pattern: ^peresadka-volos-(?P<n>\\d+)-graftov$). Une seule route dynamique [slug] doit gérer toutes les variantes."
+  },
+  {
+    "route_example": "/peresadka-volos-cherez-10-let",
+    "langs": {
+      "ru": "/peresadka-volos-cherez-10-let"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/peresadka-volos-donorskaya-zona",
+    "langs": {
+      "ru": "/peresadka-volos-donorskaya-zona"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/peresadka-volos-ekaterinburg",
+    "langs": {
+      "ru": "/peresadka-volos-ekaterinburg"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/peresadka-volos-na-makushku",
+    "langs": {
+      "ru": "/peresadka-volos-na-makushku"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/peresadka-volos-u-mujchin",
+    "langs": {
+      "ru": "/peresadka-volos-u-mujchin"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/peresadka-volos-v-almaty",
+    "langs": {
+      "ru": "/peresadka-volos-v-almaty"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/peresadka-volos-v-antalii",
+    "langs": {
+      "ru": "/peresadka-volos-v-antalii"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/peresadka-volos-v-krasnodare",
+    "langs": {
+      "ru": "/peresadka-volos-v-krasnodare"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/peresadka-volos-v-minske",
+    "langs": {
+      "ru": "/peresadka-volos-v-minske"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/peresadka-volos-v-moskve",
+    "langs": {
+      "ru": "/peresadka-volos-v-moskve"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/peresadka-volos-v-spb",
+    "langs": {
+      "ru": "/peresadka-volos-v-spb"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/peresadka-volos-v-stambule",
+    "langs": {
+      "ru": "/peresadka-volos-v-stambule"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/peresadka-volos-v-turcii-forum",
+    "langs": {
+      "ru": "/peresadka-volos-v-turcii-forum"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/peresadka-volos-wayne-rooney",
+    "langs": {
+      "ru": "/peresadka-volos-wayne-rooney"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/pri-kakoi-bolezni-silno-vipadayut-volosi",
+    "langs": {
+      "ru": "/pri-kakoi-bolezni-silno-vipadayut-volosi"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/privacy-policy",
+    "langs": {
+      "en": "/privacy-policy"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/rekomendacii-posle-peresadki-volos",
+    "langs": {
+      "ru": "/rekomendacii-posle-peresadki-volos"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/sac-dokulmesine-ne-iyi-gelir",
+    "langs": {
+      "tr": "/sac-dokulmesine-ne-iyi-gelir"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/services",
+    "langs": {
+      "en": "/services",
+      "ru": "/%d1%81%d0%b5%d1%80%d0%b2%d0%b8%d1%81%d1%8b",
+      "fr": "/prestations-de-service",
+      "it": "/servizi",
+      "tr": "/hizmetlerimiz"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/umenshenie-lba",
+    "langs": {
+      "ru": "/umenshenie-lba"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/unshaven-hair-transplant-in-turkey",
+    "langs": {
+      "en": "/unshaven-hair-transplant-in-turkey",
+      "ru": "/peresadka-volos-bez-britia"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/vitamini-protiv-vipadeniya-volos",
+    "langs": {
+      "ru": "/vitamini-protiv-vipadeniya-volos"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/why-is-hair-transplant-popular-in-turkey",
+    "langs": {
+      "en": "/why-is-hair-transplant-popular-in-turkey",
+      "ru": "/pocemu-peresadka-volos-v-turcii"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/why-worbimed",
+    "langs": {
+      "en": "/why-worbimed",
+      "ru": "/why-worbimed",
+      "it": "/perche-worbimed"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/women-hair-transplant-in-turkey",
+    "langs": {
+      "en": "/women-hair-transplant-in-turkey",
+      "ru": "/peresadka-volos-dla-jenshin-v-turcii",
+      "it": "/trapianto-di-capelli-di-donna"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/xovanskiy-peresadka-borodi",
+    "langs": {
+      "ru": "/xovanskiy-peresadka-borodi"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  },
+  {
+    "route_example": "/znamenitosti-sdelavshie-peresadku-volos",
+    "langs": {
+      "ru": "/znamenitosti-sdelavshie-peresadku-volos"
+    },
+    "type": "static",
+    "template_group": null,
+    "variant_count": 1,
+    "note": null
+  }
+]

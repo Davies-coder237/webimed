@@ -11,6 +11,27 @@ env = { "CI" = "true" }
 [workflows]
 runButton = "Project"
 
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Site Hair Transplant"
+
+[[workflows.workflow]]
+name = "Site Hair Transplant"
+author = "agent"
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "PORT=21238 BASE_PATH=/ pnpm --filter @workspace/site run dev"
+waitForPort = 21238
+
 [agent]
 stack = "PNPM_WORKSPACE"
 expertMode = true
