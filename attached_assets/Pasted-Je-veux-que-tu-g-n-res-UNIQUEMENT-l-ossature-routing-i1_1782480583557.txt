@@ -1,0 +1,61 @@
+Je veux que tu génères UNIQUEMENT l'ossature (routing + i18n) d'un site React
+multilingue, SANS contenu réel ni design pour l'instant. Le contenu et le
+design seront ajoutés dans une étape ultérieure — pour l'instant, des pages
+vides ou avec un placeholder simple ("Page: {route}") suffisent.
+
+Stack attendue : React + Vite, avec React Router v7 en "framework mode"
+(pas une simple SPA avec createBrowserRouter). C'est important : le site a
+165 pages orientées contenu/SEO (greffe de cheveux, multilingue), donc il
+faut du pré-rendu statique (SSG) au build — pas un rendu 100% côté client qui
+serait pénalisant pour le référencement. Utilise react-router.config.ts avec
+une fonction prerender() qui retourne la liste de tous les chemins à générer
+(voir react-router.config.ts et ssr: false si pas besoin de serveur Node en
+prod, juste du HTML statique).
+
+Langues : en, fr, it, ru, tr — "en" est la langue par défaut, SANS préfixe
+d'URL (ex: /contact). Les autres langues ont un préfixe (ex: /fr/contact,
+/ru/..., /it/..., /tr/...).
+
+Important sur l'i18n : React Router n'a pas de localisation d'URL native (les
+slugs traduits comme /it/contatto ou /tr/iletisim ne sont pas le même mot que
+/contact). Il faut donc créer une table de correspondance centralisée
+(src/i18n/routes.ts) qui associe, pour chaque route logique, son slug dans
+chaque langue disponible — exactement comme fourni dans le fichier joint
+site_skeleton.json (champ "langs" de chaque entrée). Génère la liste des
+chemins à pré-rendre (prerender()) à partir de cette table, plutôt que de
+deviner une traduction de slug automatiquement.
+
+Attention : certaines routes n'existent que dans 1 ou 2 langues sur les 5
+(c'est volontaire, le site original ne traduit pas tout). Ne génère PAS de
+pages vides pour les langues manquantes sur ces routes — ça créerait du
+contenu dupliqué/vide inutile (thin content), mauvais pour le SEO. Génère
+uniquement les chemins listés dans le champ "langs" de chaque entrée.
+
+Le site a 67 routes statiques (une page = un contenu unique) et 5 groupes de
+routes dynamiques représentant 60 pages au total (générées par un même
+gabarit avec une variable qui change, ex: le nom d'une célébrité ou un nombre
+de greffons capillaires). Pour CHAQUE groupe dynamique, crée une seule route
+avec un paramètre (ex: route("celebrity/:slug", "pages/celebrity.tsx") dans
+routes.ts) plutôt que des fichiers individuels par page. Le composant lit le
+paramètre via useParams() ou un loader, et le prerender() liste explicitement
+toutes les variantes à générer (une entrée par célébrité/nombre, pas une
+route générique non résolue).
+
+Voici la carte complète des routes au format JSON (fichier site_skeleton.json
+joint) : chaque entrée a route_example (chemin canonique), langs (chemin par
+langue, à utiliser dans la table de correspondance i18n), type ("static" ou
+"dynamic"), et pour les routes dynamiques, variant_count (nombre de pages
+réelles que cette route doit couvrir) et note (explication du gabarit).
+
+Génère :
+1. react-router.config.ts avec prerender() listant tous les chemins (statiques
+   + toutes les variantes des groupes dynamiques, dans toutes leurs langues
+   disponibles respectives)
+2. La table de correspondance des slugs par route/langue (src/i18n/routes.ts)
+3. app/routes.ts définissant les routes (statiques + dynamiques avec
+   paramètre)
+4. Des composants de page placeholder simples (juste le chemin affiché, pas
+   de design)
+
+Pas de contenu réel, pas de styles avancés — juste l'ossature navigable et le
+système de routing/i18n/pré-rendu fonctionnel.
