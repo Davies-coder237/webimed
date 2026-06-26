@@ -24,13 +24,13 @@ args = "Site Hair Transplant"
 name = "Site Hair Transplant"
 author = "agent"
 
-[workflows.workflow.metadata]
-outputType = "webview"
-
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "PORT=21238 BASE_PATH=/ pnpm --filter @workspace/site run dev"
 waitForPort = 21238
+
+[workflows.workflow.metadata]
+outputType = "webview"
 
 [agent]
 stack = "PNPM_WORKSPACE"
