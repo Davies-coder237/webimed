@@ -1,0 +1,24 @@
+Voici le prompt à copier-coller dans Replit pour corriger les deux écarts identifiés :
+
+Le site généré précédemment ne respecte pas entièrement les consignes initiales sur le routing dynamique. Corrige les points suivants, sans toucher au reste du design/contenu (toujours des placeholders) :
+1. Reclasser une page mal catégorisée
+ru/neudacnaya-peresadka-volos est actuellement dans STATIC_ROUTES (app/i18n/routes.ts). C'est une erreur : cette page fait partie du groupe dynamique celebrity_hair_transplant_ru (pattern ^(?P<celeb>[\w-]+)-peresadka-volos$, variant_count=13 dans site_skeleton.json). Retire-la de STATIC_ROUTES et ajoute-la comme variante dans DYNAMIC_GROUPS → groupe celebrity_hair_transplant_ru (app/data/dynamic-routes.ts), avec { slug: "neudacnaya-peresadka-volos", langs: { ru: "/neudacnaya-peresadka-volos" } }. Le groupe doit alors compter ses 13 variantes réelles (11 actuelles + neudacnaya + ter-stegen déjà inclus ailleurs si applicable — vérifie le total).
+2. Créer une vraie route paramétrée pour CHAQUE groupe dynamique
+Actuellement, seul le groupe blog_category_en a une route dédiée (route("blog/:category", "routes/blog-category.tsx")). Les 4 autres groupes dynamiques (hair_type_en, celebrity_hair_transplant_en, celebrity_hair_transplant_ru, grafts_count_ru) sont gérés par un catch-all générique (*) commun à toutes les pages statiques ET dynamiques, avec un matching par chaîne sur useLocation().pathname (resolvePage()). Ce n'est pas ce qui a été demandé : chaque groupe dynamique doit avoir SA propre route avec un paramètre, lu via useParams() (ou un loader), pas via useLocation().
+Pour chacun des 4 groupes restants :
+
+Crée une route paramétrée dédiée dans app/routes.ts, sur le modèle de blog/:category. Exemple :
+
+route("hair-type/:slug", "routes/hair-type.tsx") pour hair_type_en (mais attention : les vraies URLs sont /1a-hair-type, /1b-hair-type — pas de préfixe /hair-type/, donc le paramètre doit capturer le slug complet directement à la racine, ex: route(":slug", "routes/hair-type.tsx") avec un guard sur le pattern, ou mieux : garde une route à la racine qui matche le pattern ^\d[ab]-hair-type$ spécifiquement)
+Idem pour celebrity_hair_transplant_en (pattern *-hair-transplant et *-grafts-hair-transplant)
+Idem pour celebrity_hair_transplant_ru (pattern *-peresadka-volos)
+Idem pour grafts_count_ru (pattern peresadka-volos-*-graftov)
+
+
+Chaque composant de page doit lire sa variante via useParams(), pas via un parsing manuel de useLocation().pathname.
+Le prerender() doit toujours générer exactement les chemins listés dans DYNAMIC_GROUPS, dans toutes leurs langues respectives — pas de changement sur la logique de génération des chemins, seulement sur la façon dont React Router route et résout chaque page une fois sur le chemin.
+La route catch-all (* par langue) ne doit gérer QUE les pages statiques restantes, plus le 404 réel — elle ne doit plus servir à résoudre les pages des groupes dynamiques.
+
+3. Cohérence translingue pour les groupes traduits
+Pour celebrity_hair_transplant_en (qui a des variantes RU/TR en plus de l'EN) et blog_category_en (qui a RU/TR aussi), assure-toi que la nouvelle route paramétrée fonctionne pour TOUTES les langues du groupe, pas seulement l'EN — actuellement blog-category.tsx affiche un badge "EN" en dur même quand ce n'était pas censé être atteint par les autres langues. Le composant doit détecter la langue à partir du préfixe d'URL (comme le fait déjà lang-pages.tsx) et l'afficher correctement.
+Garde le reste de l'ossature inchangé : pas de design, pas de contenu réel, juste la correction du routing/i18n pour ces 5 groupes dynamiques.

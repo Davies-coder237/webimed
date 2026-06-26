@@ -74,6 +74,7 @@ export const DYNAMIC_GROUPS: DynamicGroup[] = [
     key: "celebrity_hair_transplant_ru",
     note: "Celebrity hair-transplant pages in Russian only",
     variants: [
+      { slug: "neudacnaya-peresadka-volos",          langs: { ru: "/neudacnaya-peresadka-volos" } },
       { slug: "andrei-beburishvili-peresadka-volos", langs: { ru: "/andrei-beburishvili-peresadka-volos" } },
       { slug: "ayza-peresadka-volos",               langs: { ru: "/ayza-peresadka-volos" } },
       { slug: "david-beckham-peresadka-volos",      langs: { ru: "/david-beckham-peresadka-volos" } },

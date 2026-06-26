@@ -19,6 +19,103 @@ type Pages = {
       "category": string;
     };
   };
+  "/services": {
+    params: {};
+  };
+  "/contact": {
+    params: {};
+  };
+  "/faq": {
+    params: {};
+  };
+  "/blog": {
+    params: {};
+  };
+  "/articles": {
+    params: {};
+  };
+  "/why-worbimed": {
+    params: {};
+  };
+  "/hair-transplant": {
+    params: {};
+  };
+  "/hair-transplant-turkey-cost": {
+    params: {};
+  };
+  "/hair-transplant-in-turkey-reviews": {
+    params: {};
+  };
+  "/hair-transplant-before-and-after": {
+    params: {};
+  };
+  "/hair-transplant-timeline-progress": {
+    params: {};
+  };
+  "/hair-transplant-after-10-years": {
+    params: {};
+  };
+  "/is-hair-transplant-in-turkey-safe": {
+    params: {};
+  };
+  "/hair-transplant-for-black-women": {
+    params: {};
+  };
+  "/hair-transplant-in-birmingham": {
+    params: {};
+  };
+  "/hair-transplant-in-istanbul": {
+    params: {};
+  };
+  "/afro-hair-transplant-in-turkey": {
+    params: {};
+  };
+  "/unshaven-hair-transplant-in-turkey": {
+    params: {};
+  };
+  "/forehead-reduction-turkey": {
+    params: {};
+  };
+  "/why-is-hair-transplant-popular-in-turkey": {
+    params: {};
+  };
+  "/fue-sapphire-hair-transplant-in-turkey": {
+    params: {};
+  };
+  "/dhi-hair-transplant-in-turkey": {
+    params: {};
+  };
+  "/beard-transplant-in-turkey": {
+    params: {};
+  };
+  "/eyebrow-transplant-in-turkey": {
+    params: {};
+  };
+  "/women-hair-transplant-in-turkey": {
+    params: {};
+  };
+  "/privacy-policy": {
+    params: {};
+  };
+  "/eminem-beard-transplant": {
+    params: {};
+  };
+  "/1a-hair-type": {
+    params: {};
+  };
+  "/1b-hair-type": {
+    params: {};
+  };
+  "/:slug": {
+    params: {
+      "slug": string;
+    };
+  };
+  "/ru/:slug": {
+    params: {
+      "slug": string;
+    };
+  };
   "/fr/*": {
     params: {
       "*": string;
@@ -49,7 +146,7 @@ type Pages = {
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/blog/:category" | "/fr/*" | "/ru/*" | "/it/*" | "/tr/*" | "/*";
+    page: "/" | "/blog/:category" | "/services" | "/contact" | "/faq" | "/blog" | "/articles" | "/why-worbimed" | "/hair-transplant" | "/hair-transplant-turkey-cost" | "/hair-transplant-in-turkey-reviews" | "/hair-transplant-before-and-after" | "/hair-transplant-timeline-progress" | "/hair-transplant-after-10-years" | "/is-hair-transplant-in-turkey-safe" | "/hair-transplant-for-black-women" | "/hair-transplant-in-birmingham" | "/hair-transplant-in-istanbul" | "/afro-hair-transplant-in-turkey" | "/unshaven-hair-transplant-in-turkey" | "/forehead-reduction-turkey" | "/why-is-hair-transplant-popular-in-turkey" | "/fue-sapphire-hair-transplant-in-turkey" | "/dhi-hair-transplant-in-turkey" | "/beard-transplant-in-turkey" | "/eyebrow-transplant-in-turkey" | "/women-hair-transplant-in-turkey" | "/privacy-policy" | "/eminem-beard-transplant" | "/1a-hair-type" | "/1b-hair-type" | "/:slug" | "/ru/:slug" | "/fr/*" | "/ru/*" | "/it/*" | "/tr/*" | "/*";
   };
   "routes/home.tsx": {
     id: "routes/home";
@@ -58,6 +155,106 @@ type RouteFiles = {
   "routes/blog-category.tsx": {
     id: "routes/blog-category";
     page: "/blog/:category";
+  };
+  "routes/en-pages.tsx": {
+    id: "en-services";
+    page: "/services";
+  } | {
+    id: "en-contact";
+    page: "/contact";
+  } | {
+    id: "en-faq";
+    page: "/faq";
+  } | {
+    id: "en-blog-index";
+    page: "/blog";
+  } | {
+    id: "en-articles";
+    page: "/articles";
+  } | {
+    id: "en-why-worbimed";
+    page: "/why-worbimed";
+  } | {
+    id: "en-hair-transplant";
+    page: "/hair-transplant";
+  } | {
+    id: "en-ht-cost";
+    page: "/hair-transplant-turkey-cost";
+  } | {
+    id: "en-ht-reviews";
+    page: "/hair-transplant-in-turkey-reviews";
+  } | {
+    id: "en-ht-before-after";
+    page: "/hair-transplant-before-and-after";
+  } | {
+    id: "en-ht-timeline";
+    page: "/hair-transplant-timeline-progress";
+  } | {
+    id: "en-ht-10y";
+    page: "/hair-transplant-after-10-years";
+  } | {
+    id: "en-ht-safe";
+    page: "/is-hair-transplant-in-turkey-safe";
+  } | {
+    id: "en-ht-bw";
+    page: "/hair-transplant-for-black-women";
+  } | {
+    id: "en-ht-birmingham";
+    page: "/hair-transplant-in-birmingham";
+  } | {
+    id: "en-ht-istanbul";
+    page: "/hair-transplant-in-istanbul";
+  } | {
+    id: "en-afro";
+    page: "/afro-hair-transplant-in-turkey";
+  } | {
+    id: "en-unshaven";
+    page: "/unshaven-hair-transplant-in-turkey";
+  } | {
+    id: "en-forehead";
+    page: "/forehead-reduction-turkey";
+  } | {
+    id: "en-why-turkey";
+    page: "/why-is-hair-transplant-popular-in-turkey";
+  } | {
+    id: "en-fue";
+    page: "/fue-sapphire-hair-transplant-in-turkey";
+  } | {
+    id: "en-dhi";
+    page: "/dhi-hair-transplant-in-turkey";
+  } | {
+    id: "en-beard";
+    page: "/beard-transplant-in-turkey";
+  } | {
+    id: "en-eyebrow";
+    page: "/eyebrow-transplant-in-turkey";
+  } | {
+    id: "en-women";
+    page: "/women-hair-transplant-in-turkey";
+  } | {
+    id: "en-privacy";
+    page: "/privacy-policy";
+  } | {
+    id: "en-eminem";
+    page: "/eminem-beard-transplant";
+  } | {
+    id: "routes/en-pages";
+    page: "/*";
+  };
+  "routes/hair-type.tsx": {
+    id: "en-1a-hair-type";
+    page: "/1a-hair-type";
+  } | {
+    id: "en-1b-hair-type";
+    page: "/1b-hair-type";
+  };
+  "routes/celebrity-transplant-en.tsx": {
+    id: "en-celeb";
+    page: "/:slug";
+  };
+  "routes/ru-dynamic.tsx": {
+    id: "ru-dynamic";
+    page: "/ru/:slug";
   };
   "routes/lang-pages.tsx": {
     id: "routes/fr-pages";
@@ -72,16 +269,43 @@ type RouteFiles = {
     id: "routes/tr-pages";
     page: "/tr/*";
   };
-  "routes/en-pages.tsx": {
-    id: "routes/en-pages";
-    page: "/*";
-  };
 };
 
 type RouteModules = {
   "root": typeof import("./app/root.tsx");
   "routes/home": typeof import("./app/routes/home.tsx");
   "routes/blog-category": typeof import("./app/routes/blog-category.tsx");
+  "en-services": typeof import("./app/routes/en-pages.tsx");
+  "en-contact": typeof import("./app/routes/en-pages.tsx");
+  "en-faq": typeof import("./app/routes/en-pages.tsx");
+  "en-blog-index": typeof import("./app/routes/en-pages.tsx");
+  "en-articles": typeof import("./app/routes/en-pages.tsx");
+  "en-why-worbimed": typeof import("./app/routes/en-pages.tsx");
+  "en-hair-transplant": typeof import("./app/routes/en-pages.tsx");
+  "en-ht-cost": typeof import("./app/routes/en-pages.tsx");
+  "en-ht-reviews": typeof import("./app/routes/en-pages.tsx");
+  "en-ht-before-after": typeof import("./app/routes/en-pages.tsx");
+  "en-ht-timeline": typeof import("./app/routes/en-pages.tsx");
+  "en-ht-10y": typeof import("./app/routes/en-pages.tsx");
+  "en-ht-safe": typeof import("./app/routes/en-pages.tsx");
+  "en-ht-bw": typeof import("./app/routes/en-pages.tsx");
+  "en-ht-birmingham": typeof import("./app/routes/en-pages.tsx");
+  "en-ht-istanbul": typeof import("./app/routes/en-pages.tsx");
+  "en-afro": typeof import("./app/routes/en-pages.tsx");
+  "en-unshaven": typeof import("./app/routes/en-pages.tsx");
+  "en-forehead": typeof import("./app/routes/en-pages.tsx");
+  "en-why-turkey": typeof import("./app/routes/en-pages.tsx");
+  "en-fue": typeof import("./app/routes/en-pages.tsx");
+  "en-dhi": typeof import("./app/routes/en-pages.tsx");
+  "en-beard": typeof import("./app/routes/en-pages.tsx");
+  "en-eyebrow": typeof import("./app/routes/en-pages.tsx");
+  "en-women": typeof import("./app/routes/en-pages.tsx");
+  "en-privacy": typeof import("./app/routes/en-pages.tsx");
+  "en-eminem": typeof import("./app/routes/en-pages.tsx");
+  "en-1a-hair-type": typeof import("./app/routes/hair-type.tsx");
+  "en-1b-hair-type": typeof import("./app/routes/hair-type.tsx");
+  "en-celeb": typeof import("./app/routes/celebrity-transplant-en.tsx");
+  "ru-dynamic": typeof import("./app/routes/ru-dynamic.tsx");
   "routes/fr-pages": typeof import("./app/routes/lang-pages.tsx");
   "routes/ru-pages": typeof import("./app/routes/lang-pages.tsx");
   "routes/it-pages": typeof import("./app/routes/lang-pages.tsx");

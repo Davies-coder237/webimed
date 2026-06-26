@@ -13,6 +13,168 @@ type Matches = [{
   id: "root";
   module: typeof import("../../root.js");
 }, {
+  id: "en-services";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-contact";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-faq";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-blog-index";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-articles";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-why-worbimed";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-hair-transplant";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-ht-cost";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-ht-reviews";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-ht-before-after";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-ht-timeline";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-ht-10y";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-ht-safe";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-ht-bw";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-ht-birmingham";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-ht-istanbul";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-afro";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-unshaven";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-forehead";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-why-turkey";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-fue";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-dhi";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-beard";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-eyebrow";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-women";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-privacy";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
+  id: "en-eminem";
+  module: typeof import("../en-pages.js");
+}] | [{
+  id: "root";
+  module: typeof import("../../root.js");
+}, {
   id: "routes/en-pages";
   module: typeof import("../en-pages.js");
 }];
