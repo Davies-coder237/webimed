@@ -1,0 +1,91 @@
+1. app/data/dynamic-routes.ts (remplace entièrement le fichier actuel)
+C'est le fichier ci-dessus, complet, sans TODO, généré directement depuis routes_merged.json — donc tu peux le copier-coller tel quel ou le donner en pièce jointe à l'agent.
+2. Le vrai problème : créer un résolveur central
+Le fond du problème reste que rien ne consulte ces tables. Il faut un seul fichier qui fait office de "vérité" pour toute URL, et que tous les composants de page interrogent — au lieu d'afficher location.pathname brut.
+ts// app/i18n/resolve.ts
+import { STATIC_ROUTES, type Lang } from "./routes";
+import { DYNAMIC_GROUPS } from "../data/dynamic-routes";
+
+export interface ResolvedPage {
+  type: "static" | "dynamic";
+  key: string;        // ex: "contact" ou "celebrity_hair_transplant_en"
+  slug?: string;       // uniquement pour dynamic, ex: "elon-musk-hair-transplant"
+  lang: Lang;
+}
+
+// path = ce qui suit le préfixe de langue, TOUJOURS avec un "/" en tête, sans slash final (sauf "/")
+export function resolvePage(lang: Lang, path: string): ResolvedPage | null {
+  const normalized = path === "" ? "/" : path.replace(/\/$/, "") || "/";
+
+  for (const route of STATIC_ROUTES) {
+    if (route.langs[lang] === normalized) {
+      return { type: "static", key: route.key, lang };
+    }
+  }
+
+  for (const group of DYNAMIC_GROUPS) {
+    for (const variant of group.variants) {
+      if (variant.langs[lang] === normalized) {
+        return { type: "dynamic", key: group.key, slug: variant.slug, lang };
+      }
+    }
+  }
+
+  return null; // vraie 404 — aucune correspondance dans les tables
+}
+3. en-pages.tsx corrigé (plus de catch-all aveugle)
+tsx// app/routes/en-pages.tsx
+import { useLocation } from "react-router";
+import { resolvePage } from "../i18n/resolve";
+import { NotFoundPage } from "./not-found-page";
+
+export function meta() {
+  return [{ title: "Page" }];
+}
+
+export default function EnPages() {
+  const location = useLocation();
+  const resolved = resolvePage("en", location.pathname);
+
+  if (!resolved) return <NotFoundPage path={location.pathname} />;
+
+  return (
+    <div style={page}>
+      <div style={card}>
+        <span style={badge}>EN</span>
+        <h1 style={title}>{resolved.key}</h1>
+        <p style={sub}>
+          Type: <code style={code}>{resolved.type}</code>
+          {resolved.slug && <> · Slug: <code style={code}>{resolved.slug}</code></>}
+        </p>
+        <p style={hint}>Placeholder — content will be added in the next phase.</p>
+      </div>
+    </div>
+  );
+}
+
+const page:  React.CSSProperties = { minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#f5f5f5" };
+const card:  React.CSSProperties = { background: "#fff", borderRadius: 8, padding: "2rem 2.5rem", boxShadow: "0 1px 4px rgba(0,0,0,.12)", maxWidth: 540, width: "100%" };
+const badge: React.CSSProperties = { display: "inline-block", background: "#e7f0ff", color: "#2255cc", borderRadius: 4, padding: "2px 10px", fontSize: 12, fontWeight: 700, marginBottom: 12 };
+const title: React.CSSProperties = { margin: "0 0 8px", fontSize: 22, fontWeight: 700, color: "#111" };
+const sub:   React.CSSProperties = { margin: "0 0 16px", fontSize: 14, color: "#555" };
+const code:  React.CSSProperties = { background: "#f0f0f0", borderRadius: 3, padding: "1px 5px", fontFamily: "monospace", fontSize: 13 };
+const hint:  React.CSSProperties = { margin: 0, fontSize: 13, color: "#888", fontStyle: "italic" };
+lang-pages.tsx doit faire exactement la même chose, sauf qu'il doit déduire la langue depuis route.id (fr-pages, ru-pages, etc. — déjà présent dans routes.ts) au lieu de coder "en" en dur, et retirer le préfixe /fr, /ru... de location.pathname avant d'appeler resolvePage.
+Un composant NotFoundPage minimal (placeholder, juste pour avoir une vraie distinction 200/404) :
+tsx// app/routes/not-found-page.tsx
+export function NotFoundPage({ path }: { path: string }) {
+  return (
+    <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
+      <div>
+        <h1>404 — Page not found</h1>
+        <p><code>{path}</code> n'existe pas dans la table de routes.</p>
+      </div>
+    </div>
+  );
+}
+4. Message à donner à l'agent Replit
+
+Remplace entièrement app/data/dynamic-routes.ts par le fichier complet ci-joint (données réelles, plus de TODO). Ensuite, crée app/i18n/resolve.ts avec la fonction resolvePage(lang, path) ci-dessous, et modifie en-pages.tsx et lang-pages.tsx pour qu'ils appellent cette fonction au lieu d'afficher location.pathname brut — affiche le key résolu, et si resolvePage retourne null, affiche un vrai composant 404 (not-found-page.tsx, fourni ci-dessous) au lieu du placeholder générique. Ne touche pas à app/i18n/routes.ts, qui est déjà correct. Vérifie ensuite que react-router.config.ts génère bien le prerender() à partir de STATIC_ROUTES + DYNAMIC_GROUPS (pas une liste codée en dur) — colle-moi ce fichier si tu veux qu'on le vérifie aussi avant de continuer.
+
+Une fois ça fait, demande-lui de te montrer le résultat de find artifacts/site/app -name "*.tsx" -o -name "*.ts" | xargs wc -l et de te coller react-router.config.ts — c'est le dernier fichier qu'on n'a pas encore vérifié, et c'est lui qui décide si les 130 URLs (67 statiques + 63 dynamiques avec toutes leurs variantes de langue) sont vraiment générées au build, ou pas.

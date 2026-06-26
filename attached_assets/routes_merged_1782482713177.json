@@ -1,0 +1,815 @@
+[
+  {
+    "canonical_route": "/1a-hair-type",
+    "variants": {
+      "en": "https://worbimed.com/1a-hair-type/"
+    }
+  },
+  {
+    "canonical_route": "/1b-hair-type",
+    "variants": {
+      "en": "https://worbimed.com/1b-hair-type/"
+    }
+  },
+  {
+    "canonical_route": "/2000-grafts-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/2000-grafts-hair-transplant/",
+      "ru": "https://worbimed.com/ru/peresadka-volos-2000-graftov/"
+    }
+  },
+  {
+    "canonical_route": "/2500-grafts-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/2500-grafts-hair-transplant/",
+      "ru": "https://worbimed.com/ru/peresadka-volos-2500-graftov/"
+    }
+  },
+  {
+    "canonical_route": "/3000-grafts-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/3000-grafts-hair-transplant/",
+      "ru": "https://worbimed.com/ru/peresadka-volos-3000-graftov/"
+    }
+  },
+  {
+    "canonical_route": "/3500-grafts-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/3500-grafts-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/4000-grafts-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/4000-grafts-hair-transplant/",
+      "ru": "https://worbimed.com/ru/peresadka-volos-4000-graftov/"
+    }
+  },
+  {
+    "canonical_route": "/4500-grafts-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/4500-grafts-hair-transplant/",
+      "ru": "https://worbimed.com/ru/peresadka-volos-4500-graftov/"
+    }
+  },
+  {
+    "canonical_route": "/5000-grafts-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/5000-grafts-hair-transplant/",
+      "ru": "https://worbimed.com/ru/peresadka-volos-5000-graftov/",
+      "tr": "https://worbimed.com/tr/5000-greft-sac-ekimi/"
+    }
+  },
+  {
+    "canonical_route": "/8000-grafts-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/8000-grafts-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/afro-hair-transplant-in-turkey",
+    "variants": {
+      "en": "https://worbimed.com/afro-hair-transplant-in-turkey/"
+    }
+  },
+  {
+    "canonical_route": "/andrew-tate-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/andrew-tate-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/andros-townsend-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/andros-townsend-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/artas-robotic-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/artas-robotic-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/beard-transplant-in-turkey",
+    "variants": {
+      "en": "https://worbimed.com/beard-transplant-in-turkey/",
+      "ru": "https://worbimed.com/ru/peresadka-borodi-v-turcii/",
+      "tr": "https://worbimed.com/tr/sakal-ekimi/"
+    }
+  },
+  {
+    "canonical_route": "/blog",
+    "variants": {
+      "en": "https://worbimed.com/blog/",
+      "ru": "https://worbimed.com/ru/%d0%b1%d0%bb%d0%be%d0%b3/",
+      "fr": "https://worbimed.com/fr/blog-sur-la-greffe-de-cheveux/",
+      "tr": "https://worbimed.com/tr/sac-ekimi-blogu/"
+    }
+  },
+  {
+    "canonical_route": "/blog/afro-hair",
+    "variants": {
+      "en": "https://worbimed.com/blog/afro-hair/"
+    }
+  },
+  {
+    "canonical_route": "/blog/beard-transplant",
+    "variants": {
+      "en": "https://worbimed.com/blog/beard-transplant/",
+      "ru": "https://worbimed.com/ru/%d0%b1%d0%bb%d0%be%d0%b3/peresadka-borodi/",
+      "tr": "https://worbimed.com/tr/sac-ekimi-blogu/sakal-ekimi/"
+    }
+  },
+  {
+    "canonical_route": "/blog/eyebrow-transplant",
+    "variants": {
+      "en": "https://worbimed.com/blog/eyebrow-transplant/",
+      "ru": "https://worbimed.com/ru/%d0%b1%d0%bb%d0%be%d0%b3/peresadka-brovey/",
+      "tr": "https://worbimed.com/tr/sac-ekimi-blogu/kas-ekimi/"
+    }
+  },
+  {
+    "canonical_route": "/blog/hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/blog/hair-transplant/",
+      "ru": "https://worbimed.com/ru/%d0%b1%d0%bb%d0%be%d0%b3/peresadka-volos/",
+      "tr": "https://worbimed.com/tr/sac-ekimi-blogu/sac-ekimi/"
+    }
+  },
+  {
+    "canonical_route": "/cbum-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/cbum-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/chris-pratt-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/chris-pratt-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/contact",
+    "variants": {
+      "en": "https://worbimed.com/contact/",
+      "ru": "https://worbimed.com/ru/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d1%8b/",
+      "fr": "https://worbimed.com/fr/contact/",
+      "it": "https://worbimed.com/it/contatto/",
+      "tr": "https://worbimed.com/tr/iletisim/"
+    }
+  },
+  {
+    "canonical_route": "/crown-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/crown-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/david-beckham-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/david-beckham-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/dhi-hair-transplant-in-turkey",
+    "variants": {
+      "en": "https://worbimed.com/dhi-hair-transplant-in-turkey/",
+      "ru": "https://worbimed.com/ru/peresadka-volos-metodom-dhi/",
+      "it": "https://worbimed.com/it/trapianto-di-capelli-con-metodo-dhi/"
+    }
+  },
+  {
+    "canonical_route": "/elon-musk-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/elon-musk-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/eminem-beard-transplant",
+    "variants": {
+      "en": "https://worbimed.com/eminem-beard-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/eyebrow-transplant-in-turkey",
+    "variants": {
+      "en": "https://worbimed.com/eyebrow-transplant-in-turkey/",
+      "ru": "https://worbimed.com/ru/peresadka-brovey-v-turcii/",
+      "tr": "https://worbimed.com/tr/kas-ekimi/"
+    }
+  },
+  {
+    "canonical_route": "/faq",
+    "variants": {
+      "en": "https://worbimed.com/faq/",
+      "ru": "https://worbimed.com/ru/faq/",
+      "fr": "https://worbimed.com/fr/faq/",
+      "it": "https://worbimed.com/it/faq/",
+      "tr": "https://worbimed.com/tr/sss/"
+    }
+  },
+  {
+    "canonical_route": "/forehead-reduction-turkey",
+    "variants": {
+      "en": "https://worbimed.com/forehead-reduction-turkey/"
+    }
+  },
+  {
+    "canonical_route": "/fue-sapphire-hair-transplant-in-turkey",
+    "variants": {
+      "en": "https://worbimed.com/fue-sapphire-hair-transplant-in-turkey/",
+      "ru": "https://worbimed.com/ru/peresadka-volos-metodom-fue-sapphire/",
+      "it": "https://worbimed.com/it/trapianto-di-capelli-con-fue-sapphire/"
+    }
+  },
+  {
+    "canonical_route": "/hair-transplant-after-10-years",
+    "variants": {
+      "en": "https://worbimed.com/hair-transplant-after-10-years/"
+    }
+  },
+  {
+    "canonical_route": "/hair-transplant-before-and-after",
+    "variants": {
+      "en": "https://worbimed.com/hair-transplant-before-and-after/",
+      "ru": "https://worbimed.com/ru/peresadka-volos-do-i-posle/",
+      "fr": "https://worbimed.com/fr/avant-et-apres/",
+      "it": "https://worbimed.com/it/risultati/",
+      "tr": "https://worbimed.com/tr/sac-ekimi-sonuclari/"
+    }
+  },
+  {
+    "canonical_route": "/hair-transplant-for-black-women",
+    "variants": {
+      "en": "https://worbimed.com/hair-transplant-for-black-women/"
+    }
+  },
+  {
+    "canonical_route": "/hair-transplant-in-birmingham",
+    "variants": {
+      "en": "https://worbimed.com/hair-transplant-in-birmingham/"
+    }
+  },
+  {
+    "canonical_route": "/hair-transplant-in-istanbul",
+    "variants": {
+      "en": "https://worbimed.com/hair-transplant-in-istanbul/"
+    }
+  },
+  {
+    "canonical_route": "/hair-transplant-in-turkey-reviews",
+    "variants": {
+      "en": "https://worbimed.com/hair-transplant-in-turkey-reviews/",
+      "ru": "https://worbimed.com/ru/peresadka-volos-v-turcii-otzivi/"
+    }
+  },
+  {
+    "canonical_route": "/hair-transplant-timeline-progress",
+    "variants": {
+      "en": "https://worbimed.com/hair-transplant-timeline-progress/",
+      "ru": "https://worbimed.com/ru/process-posle-peresadki-volos/"
+    }
+  },
+  {
+    "canonical_route": "/hair-transplant-turkey-cost",
+    "variants": {
+      "en": "https://worbimed.com/hair-transplant-turkey-cost/",
+      "ru": "https://worbimed.com/ru/peresadka-volos-v-turcii-cena/",
+      "tr": "https://worbimed.com/tr/sac-ekimi-fiyatlari/"
+    }
+  },
+  {
+    "canonical_route": "/hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/hair-transplant/",
+      "ru": "https://worbimed.com/ru/peresadka-volos/",
+      "tr": "https://worbimed.com/tr/sac-ekimi/"
+    }
+  },
+  {
+    "canonical_route": "/",
+    "variants": {
+      "en": "https://worbimed.com/",
+      "ru": "https://worbimed.com/ru/",
+      "fr": "https://worbimed.com/fr/",
+      "it": "https://worbimed.com/it/",
+      "tr": "https://worbimed.com/tr/"
+    }
+  },
+  {
+    "canonical_route": "/is-hair-transplant-in-turkey-safe",
+    "variants": {
+      "en": "https://worbimed.com/is-hair-transplant-in-turkey-safe/"
+    }
+  },
+  {
+    "canonical_route": "/jamie-foxx-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/jamie-foxx-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/jidion-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/jidion-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/justin-bieber-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/justin-bieber-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/kevin-costner-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/kevin-costner-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/kirk-cousins-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/kirk-cousins-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/lebron-james-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/lebron-james-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/lewis-hamilton-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/lewis-hamilton-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/machine-gun-kelly-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/machine-gun-kelly-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/mo-salah-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/mo-salah-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/privacy-policy",
+    "variants": {
+      "en": "https://worbimed.com/privacy-policy/"
+    }
+  },
+  {
+    "canonical_route": "/rob-brydon-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/rob-brydon-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/rob-holding-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/rob-holding-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/salman-khan-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/salman-khan-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/services",
+    "variants": {
+      "en": "https://worbimed.com/services/",
+      "ru": "https://worbimed.com/ru/%d1%81%d0%b5%d1%80%d0%b2%d0%b8%d1%81%d1%8b/",
+      "fr": "https://worbimed.com/fr/prestations-de-service/",
+      "it": "https://worbimed.com/it/servizi/",
+      "tr": "https://worbimed.com/tr/hizmetlerimiz/"
+    }
+  },
+  {
+    "canonical_route": "/steve-carell-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/steve-carell-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/ter-stegen-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/ter-stegen-hair-transplant/",
+      "ru": "https://worbimed.com/ru/ter-stegen-peresadka-volos/"
+    }
+  },
+  {
+    "canonical_route": "/tom-brady-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/tom-brady-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/tristan-tate-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/tristan-tate-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/unshaven-hair-transplant-in-turkey",
+    "variants": {
+      "en": "https://worbimed.com/unshaven-hair-transplant-in-turkey/",
+      "ru": "https://worbimed.com/ru/peresadka-volos-bez-britia/"
+    }
+  },
+  {
+    "canonical_route": "/wayne-rooney-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/wayne-rooney-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/why-is-hair-transplant-popular-in-turkey",
+    "variants": {
+      "en": "https://worbimed.com/why-is-hair-transplant-popular-in-turkey/",
+      "ru": "https://worbimed.com/ru/pocemu-peresadka-volos-v-turcii/"
+    }
+  },
+  {
+    "canonical_route": "/why-worbimed",
+    "variants": {
+      "en": "https://worbimed.com/why-worbimed/",
+      "ru": "https://worbimed.com/ru/why-worbimed/",
+      "it": "https://worbimed.com/it/perche-worbimed/"
+    }
+  },
+  {
+    "canonical_route": "/will-arnett-hair-transplant",
+    "variants": {
+      "en": "https://worbimed.com/will-arnett-hair-transplant/"
+    }
+  },
+  {
+    "canonical_route": "/women-hair-transplant-in-turkey",
+    "variants": {
+      "en": "https://worbimed.com/women-hair-transplant-in-turkey/",
+      "ru": "https://worbimed.com/ru/peresadka-volos-dla-jenshin-v-turcii/",
+      "it": "https://worbimed.com/it/trapianto-di-capelli-di-donna/"
+    }
+  },
+  {
+    "canonical_route": "/accueil",
+    "variants": {
+      "en": "https://worbimed.com/",
+      "ru": "https://worbimed.com/ru/",
+      "fr": "https://worbimed.com/fr/accueil/",
+      "it": "https://worbimed.com/it/",
+      "tr": "https://worbimed.com/tr/"
+    }
+  },
+  {
+    "canonical_route": "/blog",
+    "variants": {
+      "en": "https://worbimed.com/blog/",
+      "ru": "https://worbimed.com/ru/%d0%b1%d0%bb%d0%be%d0%b3/",
+      "fr": "https://worbimed.com/fr/blog/",
+      "tr": "https://worbimed.com/tr/sac-ekimi-blogu/"
+    }
+  },
+  {
+    "canonical_route": "/articoli",
+    "variants": {
+      "en": "https://worbimed.com/articles/",
+      "ru": "https://worbimed.com/ru/%d1%81%d1%82%d0%b0%d1%82%d1%8c%d0%b8/",
+      "it": "https://worbimed.com/it/articoli/"
+    }
+  },
+  {
+    "canonical_route": "/chi-siamo",
+    "variants": {
+      "it": "https://worbimed.com/it/chi-siamo/"
+    }
+  },
+  {
+    "canonical_route": "/home",
+    "variants": {
+      "en": "https://worbimed.com/",
+      "ru": "https://worbimed.com/ru/",
+      "fr": "https://worbimed.com/fr/",
+      "it": "https://worbimed.com/it/home/",
+      "tr": "https://worbimed.com/tr/"
+    }
+  },
+  {
+    "canonical_route": "/non-categorizzato",
+    "variants": {
+      "it": "https://worbimed.com/it/non-categorizzato/"
+    }
+  },
+  {
+    "canonical_route": "/%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d0%b0%d1%8f",
+    "variants": {
+      "en": "https://worbimed.com/",
+      "ru": "https://worbimed.com/ru/%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d0%b0%d1%8f/",
+      "fr": "https://worbimed.com/fr/",
+      "it": "https://worbimed.com/it/",
+      "tr": "https://worbimed.com/tr/"
+    }
+  },
+  {
+    "canonical_route": "/andrei-beburishvili-peresadka-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/andrei-beburishvili-peresadka-volos/"
+    }
+  },
+  {
+    "canonical_route": "/ayza-peresadka-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/ayza-peresadka-volos/"
+    }
+  },
+  {
+    "canonical_route": "/chto-takoe-graft",
+    "variants": {
+      "ru": "https://worbimed.com/ru/chto-takoe-graft/"
+    }
+  },
+  {
+    "canonical_route": "/david-beckham-peresadka-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/david-beckham-peresadka-volos/"
+    }
+  },
+  {
+    "canonical_route": "/elon-musk-peresadka-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/elon-musk-peresadka-volos/"
+    }
+  },
+  {
+    "canonical_route": "/finasteride-dla-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/finasteride-dla-volos/"
+    }
+  },
+  {
+    "canonical_route": "/grigoriy-leps-peresadka-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/grigoriy-leps-peresadka-volos/"
+    }
+  },
+  {
+    "canonical_route": "/kak-spat-posle-peresadki-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/kak-spat-posle-peresadki-volos/"
+    }
+  },
+  {
+    "canonical_route": "/laminirovaniye-brovey",
+    "variants": {
+      "ru": "https://worbimed.com/ru/laminirovaniye-brovey/"
+    }
+  },
+  {
+    "canonical_route": "/mezoterapiya-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/mezoterapiya-volos/"
+    }
+  },
+  {
+    "canonical_route": "/neudacnaya-peresadka-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/neudacnaya-peresadka-volos/"
+    }
+  },
+  {
+    "canonical_route": "/norma-vipadenie-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/norma-vipadenie-volos/"
+    }
+  },
+  {
+    "canonical_route": "/oblisenie-u-mujchin",
+    "variants": {
+      "ru": "https://worbimed.com/ru/oblisenie-u-mujchin/"
+    }
+  },
+  {
+    "canonical_route": "/pavel-durov-peresadka-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/pavel-durov-peresadka-volos/"
+    }
+  },
+  {
+    "canonical_route": "/peresadka-volo-kazan",
+    "variants": {
+      "ru": "https://worbimed.com/ru/peresadka-volo-kazan/"
+    }
+  },
+  {
+    "canonical_route": "/peresadka-volos-3500-graftov",
+    "variants": {
+      "ru": "https://worbimed.com/ru/peresadka-volos-3500-graftov/"
+    }
+  },
+  {
+    "canonical_route": "/peresadka-volos-cherez-10-let",
+    "variants": {
+      "ru": "https://worbimed.com/ru/peresadka-volos-cherez-10-let/"
+    }
+  },
+  {
+    "canonical_route": "/peresadka-volos-donorskaya-zona",
+    "variants": {
+      "ru": "https://worbimed.com/ru/peresadka-volos-donorskaya-zona/"
+    }
+  },
+  {
+    "canonical_route": "/peresadka-volos-ekaterinburg",
+    "variants": {
+      "ru": "https://worbimed.com/ru/peresadka-volos-ekaterinburg/"
+    }
+  },
+  {
+    "canonical_route": "/peresadka-volos-na-makushku",
+    "variants": {
+      "ru": "https://worbimed.com/ru/peresadka-volos-na-makushku/"
+    }
+  },
+  {
+    "canonical_route": "/peresadka-volos-u-mujchin",
+    "variants": {
+      "ru": "https://worbimed.com/ru/peresadka-volos-u-mujchin/"
+    }
+  },
+  {
+    "canonical_route": "/peresadka-volos-v-almaty",
+    "variants": {
+      "ru": "https://worbimed.com/ru/peresadka-volos-v-almaty/"
+    }
+  },
+  {
+    "canonical_route": "/peresadka-volos-v-antalii",
+    "variants": {
+      "ru": "https://worbimed.com/ru/peresadka-volos-v-antalii/"
+    }
+  },
+  {
+    "canonical_route": "/peresadka-volos-v-krasnodare",
+    "variants": {
+      "ru": "https://worbimed.com/ru/peresadka-volos-v-krasnodare/"
+    }
+  },
+  {
+    "canonical_route": "/peresadka-volos-v-minske",
+    "variants": {
+      "ru": "https://worbimed.com/ru/peresadka-volos-v-minske/"
+    }
+  },
+  {
+    "canonical_route": "/peresadka-volos-v-moskve",
+    "variants": {
+      "ru": "https://worbimed.com/ru/peresadka-volos-v-moskve/"
+    }
+  },
+  {
+    "canonical_route": "/peresadka-volos-v-spb",
+    "variants": {
+      "ru": "https://worbimed.com/ru/peresadka-volos-v-spb/"
+    }
+  },
+  {
+    "canonical_route": "/peresadka-volos-v-stambule",
+    "variants": {
+      "ru": "https://worbimed.com/ru/peresadka-volos-v-stambule/"
+    }
+  },
+  {
+    "canonical_route": "/peresadka-volos-v-turcii-forum",
+    "variants": {
+      "ru": "https://worbimed.com/ru/peresadka-volos-v-turcii-forum/"
+    }
+  },
+  {
+    "canonical_route": "/peresadka-volos-wayne-rooney",
+    "variants": {
+      "ru": "https://worbimed.com/ru/peresadka-volos-wayne-rooney/"
+    }
+  },
+  {
+    "canonical_route": "/pri-kakoi-bolezni-silno-vipadayut-volosi",
+    "variants": {
+      "ru": "https://worbimed.com/ru/pri-kakoi-bolezni-silno-vipadayut-volosi/"
+    }
+  },
+  {
+    "canonical_route": "/rekomendacii-posle-peresadki-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/rekomendacii-posle-peresadki-volos/"
+    }
+  },
+  {
+    "canonical_route": "/rob-holding-peresadka-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/rob-holding-peresadka-volos/"
+    }
+  },
+  {
+    "canonical_route": "/ruslan-beliy-peresadka-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/ruslan-beliy-peresadka-volos/"
+    }
+  },
+  {
+    "canonical_route": "/slava-marlow-peresadka-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/slava-marlow-peresadka-volos/"
+    }
+  },
+  {
+    "canonical_route": "/stas-mihailov-peresadka-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/stas-mihailov-peresadka-volos/"
+    }
+  },
+  {
+    "canonical_route": "/umenshenie-lba",
+    "variants": {
+      "ru": "https://worbimed.com/ru/umenshenie-lba/"
+    }
+  },
+  {
+    "canonical_route": "/vitamini-protiv-vipadeniya-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/vitamini-protiv-vipadeniya-volos/"
+    }
+  },
+  {
+    "canonical_route": "/xovanskiy-peresadka-borodi",
+    "variants": {
+      "ru": "https://worbimed.com/ru/xovanskiy-peresadka-borodi/"
+    }
+  },
+  {
+    "canonical_route": "/znamenitosti-sdelavshie-peresadku-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/znamenitosti-sdelavshie-peresadku-volos/"
+    }
+  },
+  {
+    "canonical_route": "/zubarefff-peresadka-volos",
+    "variants": {
+      "ru": "https://worbimed.com/ru/zubarefff-peresadka-volos/"
+    }
+  },
+  {
+    "canonical_route": "/ana-sayfa",
+    "variants": {
+      "en": "https://worbimed.com/",
+      "ru": "https://worbimed.com/ru/",
+      "fr": "https://worbimed.com/fr/",
+      "it": "https://worbimed.com/it/",
+      "tr": "https://worbimed.com/tr/ana-sayfa/"
+    }
+  },
+  {
+    "canonical_route": "/basarisiz-sac-ekimi",
+    "variants": {
+      "tr": "https://worbimed.com/tr/basarisiz-sac-ekimi/"
+    }
+  },
+  {
+    "canonical_route": "/blog",
+    "variants": {
+      "en": "https://worbimed.com/blog/",
+      "ru": "https://worbimed.com/ru/%d0%b1%d0%bb%d0%be%d0%b3/",
+      "fr": "https://worbimed.com/fr/blog-sur-la-greffe-de-cheveux/",
+      "tr": "https://worbimed.com/tr/blog/"
+    }
+  },
+  {
+    "canonical_route": "/kas-laminasyonu",
+    "variants": {
+      "tr": "https://worbimed.com/tr/kas-laminasyonu/"
+    }
+  },
+  {
+    "canonical_route": "/kok-hucre-sac-ekimi",
+    "variants": {
+      "tr": "https://worbimed.com/tr/kok-hucre-sac-ekimi/"
+    }
+  },
+  {
+    "canonical_route": "/murat-boz-sac-ekimi",
+    "variants": {
+      "tr": "https://worbimed.com/tr/murat-boz-sac-ekimi/"
+    }
+  },
+  {
+    "canonical_route": "/sac-dokulmesine-ne-iyi-gelir",
+    "variants": {
+      "tr": "https://worbimed.com/tr/sac-dokulmesine-ne-iyi-gelir/"
+    }
+  }
+]

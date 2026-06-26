@@ -50,6 +50,7 @@ export const STATIC_ROUTES: RouteEntry[] = [
   { key: "privacy-policy", langs: { en: "/privacy-policy" } },
 
   // ── RU ONLY ────────────────────────────────────────────────────────────────
+  { key: "neudacnaya-peresadka-volos",   langs: { ru: "/neudacnaya-peresadka-volos" } },
   { key: "chto-takoe-graft",             langs: { ru: "/chto-takoe-graft" } },
   { key: "finasteride",                  langs: { ru: "/finasteride-dla-volos" } },
   { key: "kak-spat",                     langs: { ru: "/kak-spat-posle-peresadki-volos" } },

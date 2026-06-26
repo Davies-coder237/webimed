@@ -1,5 +1,7 @@
 import React from "react";
-import { useLocation, useParams } from "react-router";
+import { useLocation } from "react-router";
+import { resolvePage } from "../i18n/resolve";
+import { NotFoundPage } from "./not-found-page";
 
 export function meta() {
   return [{ title: "Page" }];
@@ -7,15 +9,21 @@ export function meta() {
 
 export default function EnPages() {
   const location = useLocation();
-  const params = useParams();
-  const slug = params["*"] ?? location.pathname;
+  const path = location.pathname;
+  const resolved = resolvePage("en", path);
+
+  if (!resolved) return <NotFoundPage path={path} />;
 
   return (
     <div style={page}>
       <div style={card}>
         <span style={badge}>EN</span>
-        <h1 style={title}>Page: {location.pathname}</h1>
-        <p style={sub}>Slug: <code style={code}>{slug}</code></p>
+        <h1 style={title}>{resolved.key}</h1>
+        <p style={sub}>
+          Type: <code style={code}>{resolved.type}</code>
+          {resolved.slug && <> · Slug: <code style={code}>{resolved.slug}</code></>}
+          <> · Path: <code style={code}>{path}</code></>
+        </p>
         <p style={hint}>Placeholder — content will be added in the next phase.</p>
       </div>
     </div>

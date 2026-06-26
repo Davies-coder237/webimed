@@ -1,5 +1,8 @@
 import React from "react";
-import { useLocation, useParams } from "react-router";
+import { useLocation } from "react-router";
+import { resolvePage, type ResolvedPage } from "../i18n/resolve";
+import type { Lang } from "../i18n/routes";
+import { NotFoundPage } from "./not-found-page";
 
 export function meta() {
   return [{ title: "Page" }];
@@ -12,21 +15,35 @@ const LANG_COLORS: Record<string, { bg: string; fg: string }> = {
   tr: { bg: "#f3e5f5", fg: "#6a1b9a" },
 };
 
+const SUPPORTED_LANGS = new Set<Lang>(["fr", "ru", "it", "tr"]);
+
 export default function LangPages() {
   const location = useLocation();
-  const params = useParams();
-  const splat = params["*"] ?? "";
+  const parts = location.pathname.split("/").filter(Boolean);
+  const langRaw = parts[0] ?? "";
+  const lang: Lang = SUPPORTED_LANGS.has(langRaw as Lang) ? (langRaw as Lang) : "en";
 
-  const lang = location.pathname.split("/").filter(Boolean)[0] ?? "?";
-  const slug = splat ? `/${splat}` : "/";
+  // Strip the /lang prefix to get the path within that language
+  const withoutPrefix = "/" + parts.slice(1).join("/");
+  const langPath = withoutPrefix === "/" && parts.length <= 1 ? "/" : withoutPrefix;
+
+  const resolved: ResolvedPage | null = resolvePage(lang, langPath);
   const colors = LANG_COLORS[lang] ?? { bg: "#f5f5f5", fg: "#333" };
+
+  if (!resolved) return <NotFoundPage path={location.pathname} />;
 
   return (
     <div style={page}>
       <div style={card}>
-        <span style={{ ...badge, background: colors.bg, color: colors.fg }}>{lang.toUpperCase()}</span>
-        <h1 style={title}>Page: {location.pathname}</h1>
-        <p style={sub}>Slug within language: <code style={code}>{slug}</code></p>
+        <span style={{ ...badge, background: colors.bg, color: colors.fg }}>
+          {lang.toUpperCase()}
+        </span>
+        <h1 style={title}>{resolved.key}</h1>
+        <p style={sub}>
+          Type: <code style={code}>{resolved.type}</code>
+          {resolved.slug && <> · Slug: <code style={code}>{resolved.slug}</code></>}
+          <> · Path: <code style={code}>{location.pathname}</code></>
+        </p>
         <p style={hint}>Placeholder — content will be added in the next phase.</p>
       </div>
     </div>
