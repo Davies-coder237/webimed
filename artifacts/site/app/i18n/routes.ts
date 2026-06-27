@@ -17,7 +17,7 @@ export const STATIC_ROUTES: RouteEntry[] = [
   { key: "services",      langs: { en: "/services",                   ru: "/%d1%81%d0%b5%d1%80%d0%b2%d0%b8%d1%81%d1%8b", fr: "/prestations-de-service", it: "/servizi",   tr: "/hizmetlerimiz" } },
   { key: "contact",       langs: { en: "/contact",                    ru: "/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d1%8b",                             fr: "/contact",  it: "/contatto",  tr: "/iletisim" } },
   { key: "faq",           langs: { en: "/faq",                        ru: "/faq",                                                                           fr: "/faq",      it: "/faq",       tr: "/sss" } },
-  { key: "blog",          langs: { en: "/blog",                       ru: "/%d0%b1%d0%bb%d0%be%d0%b3",                                                     fr: "/blog-sur-la-greffe-de-cheveux",                 tr: "/blog" } },
+  { key: "blog",          langs: { en: "/blog",                       ru: "/%d0%b1%d0%bb%d0%be%d0%b3",                                                     fr: "/blog-sur-la-greffe-de-cheveux",                 tr: "/sac-ekimi-blogu" } },
   { key: "articles",      langs: { en: "/articles",                   ru: "/%d1%81%d1%82%d0%b0%d1%82%d1%8c%d0%b8",                                        it: "/articoli" } },
   { key: "why-worbimed",  langs: { en: "/why-worbimed",               ru: "/why-worbimed",                                                                  it: "/perche-worbimed" } },
 
